@@ -1,14 +1,27 @@
 <?php
 class Personnage{
-    public $vie = 80;// je peux remplacer le 80 par le 20
-    public $atk = 20;
-    public $nom;
+    private $vie = 80;// je peux remplacer le 80 par le 20
+    private $atk = 20;
+    private $nom;
     
 
-    public function __construct($nom){
+    /*public function __construct($vie,$atk,$om){
         $this->nom = $nom;
+        $this->atk = $atk;
+        $this->vie = $vie;
+    }*/
+
+    public function getNom(){
+        return $this->nom;
     }
 
+    public function getVie(){
+        return $this->vie;
+    }
+
+    public function getAtk(){
+        return $this->atk;
+    }
 
     public function regenerer($vie = null){
         if(is_null($vie)){

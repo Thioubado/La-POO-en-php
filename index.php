@@ -1,27 +1,16 @@
 <?php
 require 'Personnage.php';
 
-$merlin = new Personnage("Merlin");
-$merlin->regenerer(5);
-//$merlin->nom = "Merlin";
-var_dump($merlin);
+$merlin = new Personnage();
 
-echo '<br>';
-$harry = new Personnage("Harry");
-//$harry->nom = "Harry";
-//$harry->vie = -20;
-//$harry->regenerer();
-var_dump($harry);
+echo "declaration avec variable privée avec 'get' ";
+echo '<br/>';
+echo $merlin->getNom();
 
-$merlin->attaque($harry);
+echo '<br/>';
+echo $merlin->getVie();
 
-if($harry->mort()){
-    echo 'Harry est mort';
-}
-else{
-    echo 'Harry a de la chance. Il a survécu avec ' . $harry->vie;
-}
-//var_dump($merlin->regenerer());
+echo '<br/>';
+echo $merlin->getAtk();
 
-//var_dump($harry->mort());
-
+echo '<br/>';
