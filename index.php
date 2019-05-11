@@ -19,7 +19,7 @@ if($harry->mort()){
     echo 'Harry est mort';
 }
 else{
-    echo 'Harry a de la chance. Il est vivant';
+    echo 'Harry a de la chance. Il a survécu avec ' . $harry->vie;
 }
 //var_dump($merlin->regenerer());
 

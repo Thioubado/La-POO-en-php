@@ -23,7 +23,7 @@ class Personnage{
     }
 
     public function attaque($cible){
-        //this = attaquant
+        //$this = attaquant
         //cible = defenseur
         // defenseur.vie -= attaquant.atk
         $cible->vie -= $this->atk;
