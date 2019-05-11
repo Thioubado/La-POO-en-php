@@ -1,8 +1,22 @@
 <?php
+/**
+ * class Form
+ * permet de générer un formulaire rapidement simplement
+ */
 class Form{
 
+    /**
+     * @var array Données utilisées par le formulaire
+     */
     private $data = array();
+
+    /**
+     * @var string Tag utilisé pour entourer les champs
+     */
     public $surround = 'p';
+    /**
+     * @param array $data
+     */
 
     public function __construct($data=array()){
         $this->data = $data;
