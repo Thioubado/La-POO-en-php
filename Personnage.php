@@ -5,7 +5,7 @@ class Personnage{
     private $nom;
     
 
-    /*public function __construct($vie,$atk,$om){
+    /*public function __construct($vie,$atk,$nom){
         $this->nom = $nom;
         $this->atk = $atk;
         $this->vie = $vie;
