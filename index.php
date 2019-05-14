@@ -1,16 +1,13 @@
 <?php
 require 'Personnage.php';
+require 'Archer.php';
 
 $merlin = new Personnage("Merlin");
-//$merlin = new Personnage("harry");
+$harry = new Personnage("harry");
+$legolas = new archer("Legolas");
 
-echo "declaration avec variable privée avec 'get' ";
-echo '<br/>';
-echo $merlin->getNom();
+$legolas->attaque($harry);
 
-echo '<br/>';
-echo $merlin->getVie();
-
-echo '<br/>';
-echo $merlin->getAtk();
-
+echo '<pre>';
+var_dump($merlin, $harry, $legolas);
+echo '</pre>';
