@@ -1,19 +1,20 @@
 <?php
 class Personnage{
 
-    const MAX_VIE = 100;
+    //const MAX_VIE = 100;
 
     private $vie = 80;// je peux remplacer le 80 par le 20
     private $atk = 20;
-    private $nom;
+    public $nom;
     
 
-    /*public function __construct($vie,$atk,$nom){
+    public function __construct($nom){
         $this->nom = $nom;
-        $this->atk = $atk;
-        $this->vie = $vie;
-    }*/
+    }
 
+    public function setNom($nom){
+        $this->nom = $nom;
+    }
     public function getNom(){
         return $this->nom;
     }
