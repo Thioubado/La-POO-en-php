@@ -8,7 +8,7 @@ class Form{
     /**
      * @var array Données utilisées par le formulaire
      */
-    private $data = array();
+    protected $data = array();
 
     /**
      * @var string Tag utilisé pour entourer les champs
@@ -22,11 +22,11 @@ class Form{
         $this->data = $data;
     }
 
-    private function surround($html){
+    protected function surround($html){
         return "<{$this->surround}>{$html}</$this->surround>";
     }
 
-    private function getValue($index){
+    protected function getValue($index){
         return isset($this->data[$index]) ? $this->data[$index] : null ;
     }
 
