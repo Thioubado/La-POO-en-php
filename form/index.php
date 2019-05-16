@@ -15,11 +15,16 @@
     <h1>Hello, world!</h1>
 
 <?php
-require 'form.php';
-require 'bootstrapForm.php';
+/*require 'form.php';
+require 'bootstrapForm.php';*/
 
+/**
+ * La fonction autoload permet de charger les fichiers sans faire beaucoup de require
+ */
+require 'class/Autoloader.php';
+Autoloader::register();
 
-$form = new bootstrapForm($_POST);
+$form = new BootstrapForm($_POST);
 
 
 ?>

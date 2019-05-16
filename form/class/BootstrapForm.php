@@ -1,5 +1,5 @@
 <?php
-class bootstrapForm extends Form{
+class BootstrapForm extends Form{
 
 
     protected function surround($html){
