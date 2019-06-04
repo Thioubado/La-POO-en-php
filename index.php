@@ -4,7 +4,7 @@ require 'Archer.php';
 
 $merlin = new Personnage("Merlin");
 $harry = new Personnage("harry");
-$legolas = new archer("Legolas");
+$legolas = new Archer("Legolas");
 
 $legolas->attaque($harry);
 
