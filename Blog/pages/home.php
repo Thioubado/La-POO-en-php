@@ -4,12 +4,15 @@
 <ul>
 <?php
 
-foreach ($db->query('SELECT* FROM articles') as $post):?>
+foreach ($db->query('SELECT* FROM articles', 'App\Table\Article') as $post):?>
+        
+        <!--je peux remplacer le $post->URL en $post->getURL() et le $post->extrait en $post->getExtrait()                 -->
+    <!--    <h2><a href="<?php $post->url; ?>"><?=$post->titre;?></a></h2>  -->
+    <h2><a href="<?= $post->getURL(); ?>"><?=$post->titre;?></a></h2>
+    <p><?= $post->getExtrait(); ?></p>
 
-    <li>
-        <a href="index.php?p=post&id=<?= $post->id;?>"><?=$post->titre;?></a>
-    </li>
-
+    
+        
 <?php endforeach?>
 
 </ul>
